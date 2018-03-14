@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/escolha_qual_cachorro_deseja"
+        android:textColor="#FF0000"
+        android:textSize="23sp" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/rdgCachorros">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/border_collie_r_800_00"
+            android:textSize="18dp"
+            android:id="@+id/rdbBorderCollie"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/pit_bull_r_750_00"
+            android:textSize="18dp"
+            android:id="@+id/rdbPitBull"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/pastor_alem_o_r_700_00"
+            android:textSize="18dp"
+            android:id="@+id/rdbPastorAlemao"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/pastor_canadense_r_800_00"
+            android:textSize="18dp"
+            android:id="@+id/rdbPastorCanadense"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:checked="false"
+        android:text="@string/f_mea"
+        android:textSize="18dp"
+        android:id="@+id/chkFemea"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/adestrado"
+        android:textSize="18dp"
+        android:id="@+id/chkAdestrado"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:checked="true"
+        android:text="@string/com_todas_as_vacinas_em_dia"
+        android:textSize="18dp"
+        android:id="@+id/chkVacinas"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/calcular"
+        android:textSize="20dp"
+        android:onClick="calcular"
+        android:id="@+id/btnCalc"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/rs0"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:id="@+id/txtResultado"/>
+</LinearLayout>
